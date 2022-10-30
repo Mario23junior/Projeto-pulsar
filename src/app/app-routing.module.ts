@@ -1,7 +1,8 @@
 import { Component, NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { HomeComponent } from './componentes/home/home.component';
+import { HomeComponent } from './components/nav/home/home.component';
 import { NavComponent } from './components/nav/nav.component';
+import { PulsarListComponent } from './pulsar/pulsar-list/pulsar-list.component';
 
 const routes: Routes = [
   {
@@ -10,6 +11,10 @@ const routes: Routes = [
         path: 'home',
         component: HomeComponent
       },
+      {
+        path:'pulsares',
+        component:PulsarListComponent
+      }
        
     ]
   }
