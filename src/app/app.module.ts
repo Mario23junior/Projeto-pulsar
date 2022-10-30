@@ -13,12 +13,14 @@ import { MatCardModule } from '@angular/material/card';
 import { HttpClientModule } from '@angular/common/http';
 import { NavComponent } from './components/nav/nav.component';
 import { HomeComponent } from './componentes/home/home.component';
+import { PulsarListComponent } from './pulsar/pulsar-list/pulsar-list.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavComponent,
-    HomeComponent
+    HomeComponent,
+    PulsarListComponent
   ],
   imports: [
     BrowserModule,
