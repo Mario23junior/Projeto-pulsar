@@ -1,0 +1,10 @@
+.card {
+     margin-left: 1rem;
+     margin-right: 1rem;
+    background-color: rgb(87, 87, 87);
+}
+
+p ,mat-card-title,mat-card-subtitle{
+   color: white;
+}
+ 
