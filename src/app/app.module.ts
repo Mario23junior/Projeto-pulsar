@@ -5,15 +5,18 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
+// Para realizar requisições HTTP
+import { HttpClientModule } from '@angular/common/http';
+
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatButtonModule } from '@angular/material/button';
 import { MatListModule } from '@angular/material/list';
 import { MatIconModule } from '@angular/material/icon';
 import { MatCardModule } from '@angular/material/card';
-import { HttpClientModule } from '@angular/common/http';
 import { NavComponent } from './components/nav/nav.component';
 import { HomeComponent } from './components/nav/home/home.component';
 import { PulsarListComponent } from './pulsar/pulsar-list/pulsar-list.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -27,11 +30,11 @@ import { PulsarListComponent } from './pulsar/pulsar-list/pulsar-list.component'
     AppRoutingModule,
     MatButtonModule,
     BrowserAnimationsModule,
-    MatSidenavModule,
-    MatListModule,
-    MatIconModule,
-    MatCardModule,
-    HttpClientModule
+    // Forms
+    FormsModule,
+    ReactiveFormsModule,
+    // Requisições http
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
