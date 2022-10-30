@@ -14,10 +14,10 @@ import { MatListModule } from '@angular/material/list';
 import { MatIconModule } from '@angular/material/icon';
 import { MatCardModule } from '@angular/material/card';
 import { NavComponent } from './components/nav/nav.component';
-import { HomeComponent } from './components/nav/home/home.component';
+import { HomeComponent } from './components/home/home.component';
 import { PulsarListComponent } from './pulsar/pulsar-list/pulsar-list.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-
+ 
 @NgModule({
   declarations: [
     AppComponent,
@@ -35,6 +35,10 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     ReactiveFormsModule,
     // Requisições http
     HttpClientModule,
+    MatIconModule,
+    MatSidenavModule,
+    MatCardModule,
+    MatListModule
   ],
   providers: [],
   bootstrap: [AppComponent]
