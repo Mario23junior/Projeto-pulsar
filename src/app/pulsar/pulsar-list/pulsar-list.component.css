@@ -20,4 +20,7 @@ img {
    height: 400px;
 
 }
- 
+.container{
+   padding: auto;
+   margin: auto;
+}
