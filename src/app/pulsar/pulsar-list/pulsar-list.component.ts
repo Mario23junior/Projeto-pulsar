@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { Observable } from 'rxjs';
+import { Pulsar } from 'src/app/model/Pulsar';
+import { PulsarService } from 'src/app/service/pulsar.service';
 
 @Component({
   selector: 'app-pulsar-list',
@@ -7,7 +10,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PulsarListComponent implements OnInit {
 
-  constructor() { }
+  data: Pulsar[] = []
+  dataloadin: Observable<Pulsar[]>
+
+  constructor(
+    private service: PulsarService,
+   ) {
+    this.service.listAll()
+      .subscribe(data => {
+        this.data = data
+        console.log(data)
+      })
+
+    this.dataloadin = this.service.listAll()
+    
+      
+  }
 
   ngOnInit(): void {
   }

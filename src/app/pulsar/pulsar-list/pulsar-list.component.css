@@ -4,7 +4,8 @@
     background-color: rgb(87, 87, 87);
 }
 
-p ,mat-card-title,mat-card-subtitle{
+
+p ,mat-card-title,mat-card-subtitle,h2{
    color: white;
 }
  
