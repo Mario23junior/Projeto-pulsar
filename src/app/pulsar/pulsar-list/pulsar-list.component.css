@@ -1,11 +1,23 @@
 .card {
-     margin-left: 1rem;
-     margin-right: 1rem;
-    background-color: rgb(87, 87, 87);
+   margin-left: 1rem;
+   margin-right: 1rem;
+
+   background-color: rgb(87, 87, 87);
 }
 
 
-p ,mat-card-title,mat-card-subtitle,h2{
+p,
+mat-card-title,
+mat-card-subtitle,
+h2 {
    color: white;
+}
+
+img {
+   width: 400px;
+   position: initial;
+   background-size: auto;
+   height: 400px;
+
 }
  
