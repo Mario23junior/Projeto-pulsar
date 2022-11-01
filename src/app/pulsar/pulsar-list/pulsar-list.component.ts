@@ -11,7 +11,7 @@ import { PulsarService } from 'src/app/service/pulsar.service';
 export class PulsarListComponent implements OnInit {
 
   data: Pulsar[] = []
-  dataloadin: Observable<Pulsar[]>
+  dataBase: Observable<Pulsar[]> 
 
   constructor(
     private service: PulsarService,
@@ -22,7 +22,7 @@ export class PulsarListComponent implements OnInit {
         console.log(data)
       })
 
-    this.dataloadin = this.service.listAll()
+    this.dataBase = this.service.listAll()
     
       
   }

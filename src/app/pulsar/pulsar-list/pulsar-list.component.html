@@ -1,4 +1,4 @@
-<div class="container">
+<div class="content" *ngIf="dataBase | async as telescopeData; else loadingPage">
   <mat-grid-list cols="3" rowHeight="2.23:3.4">
     <mat-grid-tile *ngFor="let result of data">
       <mat-card class="card">
@@ -15,7 +15,15 @@
         </mat-card-content>
       </mat-card>
     </mat-grid-tile>
+    
   </mat-grid-list>
 </div>
+
+<ng-template #loadingPage>
+  <div class="loading-spinner">
+      <mat-spinner  value="80" strokeWidth="2" diameter=320></mat-spinner>
+  </div>
+</ng-template>
+ 
 
  

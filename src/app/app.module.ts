@@ -18,6 +18,7 @@ import { HomeComponent } from './components/home/home.component';
 import { PulsarListComponent } from './pulsar/pulsar-list/pulsar-list.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatGridListModule } from '@angular/material/grid-list';
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 
 @NgModule({
   declarations: [
@@ -40,7 +41,8 @@ import { MatGridListModule } from '@angular/material/grid-list';
     MatSidenavModule,
     MatCardModule,
     MatListModule,
-    MatGridListModule
+    MatGridListModule,
+    MatProgressSpinnerModule
   ],
   providers: [],
   bootstrap: [AppComponent]
